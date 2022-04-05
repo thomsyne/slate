@@ -59,8 +59,8 @@ html, body {
   bottom: 0;
   width: $nav-width;
   background-color: $nav-bg;
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 500;
 
   // language selector for mobile devices
   .lang-selector {
@@ -92,6 +92,10 @@ html, body {
       outline: none;
       color: $nav-text;
       border-radius: 0; /* ios has a default border radius */
+    }
+
+    input::placeholder {
+      color: #c91c24 !important;
     }
 
     &:before {
@@ -141,7 +145,7 @@ html, body {
     list-style: none;
     margin: 0;
     padding: 0;
-    line-height: 28px;
+    line-height: 60px;
   }
 
   li {
@@ -171,7 +175,7 @@ html, body {
 
   .toc-h2 {
     padding-left: $nav-padding + $nav-indent;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .toc-footer {
